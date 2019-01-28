@@ -6,6 +6,7 @@ Dead simple benchmarking class.
 ```cpp
 #include <iostream>
 #include <tuple>
+#include <string>
 #include "bench.hpp"
 
 // Time the algorithm.
