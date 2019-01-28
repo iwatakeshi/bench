@@ -5,6 +5,7 @@
 #include <tuple>
 #include <iostream>
 #include <chrono>
+
 using std::cout;
 using std::endl;
 using std::function;
@@ -20,7 +21,7 @@ class Bench {
   }
   
   template <typename T>
-  static T time(function<T(void)>const& lambda) {
+  static std::tuple<double, T> time(function<T(void)>const& lambda) {
     auto start = std::chrono::high_resolution_clock::now();\
     T solution = lambda();
     auto stop = std::chrono::high_resolution_clock::now();
