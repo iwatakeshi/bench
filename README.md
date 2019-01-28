@@ -1,4 +1,4 @@
-# bench.hpp
+# bench
 Dead simple benchmarking class.
 
 ## Usage
