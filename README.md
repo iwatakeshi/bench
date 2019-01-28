@@ -1,18 +1,26 @@
 # bench.hpp
 Dead simple benchmarking class.
 
-# Usage
+## Usage
 
 ```cpp
-#include "bench.hpp"
 #include <iostream>
+#include <tuple>
+#include "bench.hpp"
 
+// Time the algorithm.
 double duration = Bench::time([]() {
   // The algorithm to benchmark here.
 });
 
 std::cout << "duration: " << duration << std::endl;
 
-```
+// Time the algorithm and return the processed value
+auto tuple = Bench::time<int>([]() {
+  // ...
+  return 1;
+});
 
-> Note: `time()` can also return a tuple containing the the duration and the returned value from the lambda function.
+cout << std::to_string(std::get<0>(tuple)) << " " << std::to_string(std::get<1>(tuple)) << endl;
+
+```
