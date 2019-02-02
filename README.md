@@ -1,5 +1,5 @@
 # bench
-Dead simple benchmarking class.
+Dead simple benchmarking functions.
 
 ## Usage
 
