@@ -10,14 +10,14 @@ Dead simple benchmarking class.
 #include "bench.hpp"
 
 // Time the algorithm.
-double duration = Bench::time([]() {
+double duration = bench::time([]() {
   // The algorithm to benchmark here.
 });
 
 std::cout << "duration: " << duration << std::endl;
 
 // Time the algorithm and return the processed value
-auto tuple = Bench::time<int>([]() {
+auto tuple = bench::time<int>([]() {
   // ...
   return 1;
 });
