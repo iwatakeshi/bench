@@ -10,8 +10,7 @@ using std::cout;
 using std::endl;
 using std::function;
 
-class Bench {
-  public:
+namespace bench {
   static auto time(function<void()>const& lambda) {
     auto start = std::chrono::high_resolution_clock::now();
     lambda();
