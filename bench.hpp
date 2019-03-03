@@ -6,12 +6,8 @@
 #include <iostream>
 #include <chrono>
 
-using std::cout;
-using std::endl;
-using std::function;
-
 namespace bench {
-  static auto time(function<void()>const& lambda) {
+  static auto time(std::function<void()>const& lambda) {
     auto start = std::chrono::high_resolution_clock::now();
     lambda();
     auto stop = std::chrono::high_resolution_clock::now();
