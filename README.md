@@ -7,7 +7,7 @@ Dead simple benchmarking functions.
 #include <iostream>
 #include <tuple>
 #include <string>
-#include "bench.hpp"
+#include <bench.hpp>
 
 // Time the algorithm.
 double duration = bench::time([]() {
