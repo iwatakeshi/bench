@@ -3,6 +3,15 @@ Dead simple benchmarking functions.
 
 ## Usage
 
+To use this library, install [buckaroo](https://github.com/LoopPerfect/buckaroo/wiki/Installation#buckaroo) and [buck](https://github.com/LoopPerfect/buckaroo/wiki/Installation#buck). Once installed, [initialize](https://github.com/LoopPerfect/buckaroo/wiki/Commands#init) buckaroo in your project folder and run the following command:
+
+```bash
+# Add the latest version
+buckaroo add github.com/iwatakeshi/latte/
+# Install dependencies
+buckaroo install
+```
+
 ```cpp
 #include <iostream>
 #include <tuple>
